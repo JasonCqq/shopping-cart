@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
     <div className="main">
       <div className="welcome-message">
@@ -12,7 +21,9 @@ function Home() {
           capping reigns supreme, and explore a plethora of head-turning
           designs.
         </h2>
-        <button>SHOP NOW</button>
+        <Link to="/store" className="shop-now-button">
+          SHOP NOW
+        </Link>
       </div>
     </div>
   );

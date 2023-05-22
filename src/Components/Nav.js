@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -8,14 +9,14 @@ function Nav() {
         <a href="#" className="logo">
           <span>The Cap Shop</span>
         </a>
-        <input id="bmenub" type="checkbox" class="show"></input>
-        <label for="bmenub" class="burger pseudo button">
+        <input id="bmenub" type="checkbox" className="show"></input>
+        <label htmlFor="bmenub" className="burger pseudo button">
           MENU
         </label>
-        <div class="menu">
-          <a href="#">HOME</a>
-          <a href="#">STORE</a>
-          <a href="#">CART</a>
+        <div className="menu">
+          <Link to={"/"}>HOME</Link>
+          <Link to={"Store"}>STORE</Link>
+          <a>ABOUT</a>
         </div>
       </nav>
     </div>

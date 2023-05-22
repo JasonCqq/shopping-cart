@@ -1,7 +1,7 @@
 @import "../../node_modules/picnic/picnic.min.css";
 
-body {
-  overflow: hidden;
+a {
+  color: black;
 }
 
 .main {
@@ -25,18 +25,18 @@ body {
   background-size: cover;
 }
 
-button {
-  padding: 10px 25px;
+.shop-now-button {
+  padding: 10px 35px;
   background-color: white;
   color: black;
   font-weight: bold;
   border-radius: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 1px;
-  width: 25%;
+  width: 50%;
 }
 
-button:hover {
+.shop-now-button:hover {
   outline: 3px solid black;
 }
 
