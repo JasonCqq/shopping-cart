@@ -1,0 +1,66 @@
+@import "../../node_modules/picnic/picnic.min.css";
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  margin-top: 52.8px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url("../Images/beautiful-nature-g2c771fb97_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  padding: 10px 25px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  width: 25%;
+}
+
+button:hover {
+  outline: 3px solid black;
+}
+
+.welcome-message {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.welcome-message h1 {
+  font-size: 3rem;
+  width: 70%;
+  padding-top: 15vh;
+  color: black;
+  text-shadow: 0 0 1em white;
+}
+
+.brief-description {
+  width: 70%;
+  text-shadow: 0 0 1em black;
+}

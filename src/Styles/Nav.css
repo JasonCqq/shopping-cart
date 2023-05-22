@@ -1,0 +1,25 @@
+@import "../../node_modules/picnic/picnic.min.css";
+
+nav {
+  box-shadow: 0px 5px 5px gray;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+.menu a {
+  color: black;
+  padding: 15px 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
