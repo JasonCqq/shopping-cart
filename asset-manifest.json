@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jason21715/shopping-cart/static/css/main.84c351ae.css",
+    "main.js": "/jason21715/shopping-cart/static/js/main.690548a1.js",
+    "static/media/pexels-marcus-murphy-1878821.jpg": "/jason21715/shopping-cart/static/media/pexels-marcus-murphy-1878821.6e78644d7231f0ef06a6.jpg",
+    "static/media/pier-lake-hallstatt-austria_181624-44201.avif": "/jason21715/shopping-cart/static/media/pier-lake-hallstatt-austria_181624-44201.fc8ab10982ef3f778503.avif",
+    "index.html": "/jason21715/shopping-cart/index.html",
+    "main.84c351ae.css.map": "/jason21715/shopping-cart/static/css/main.84c351ae.css.map",
+    "main.690548a1.js.map": "/jason21715/shopping-cart/static/js/main.690548a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84c351ae.css",
+    "static/js/main.690548a1.js"
+  ]
+}
