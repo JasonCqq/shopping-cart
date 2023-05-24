@@ -10,6 +10,7 @@ const Store = () => {
       price: "100",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -17,6 +18,7 @@ const Store = () => {
       price: "90",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -24,6 +26,7 @@ const Store = () => {
       price: "80",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -31,6 +34,7 @@ const Store = () => {
       price: "70",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -38,6 +42,7 @@ const Store = () => {
       price: "60",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -45,6 +50,7 @@ const Store = () => {
       price: "50",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -52,6 +58,7 @@ const Store = () => {
       price: "40",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
 
     {
@@ -59,17 +66,22 @@ const Store = () => {
       price: "30",
       image: hatImage,
       quantity: 0,
+      inCart: false,
     },
   ]);
-
   const [cartItem, setCartItem] = useState([]);
   const [cartPrice, setCartPrice] = useState(0);
 
+  //Track total price
   useEffect(() => {
+    let updatedCartItems = cartItem.filter((item) => item.inCart === true);
     let sum = 0;
-    cartItem.map((item) => {
+
+    updatedCartItems = updatedCartItems.map((item) => {
       sum += Number(Number(item.quantity) * Number(item.price));
+      return item;
     });
+
     setCartPrice(sum);
   }, [cartItem]);
 
@@ -79,12 +91,19 @@ const Store = () => {
   };
 
   const addToCartClick = (data) => {
+    for (const item of cartItem) {
+      if (item.name === data.name || item.inCart === false) {
+        return;
+      }
+    }
+
     setCartItem((prevCartItems) => [
       ...prevCartItems,
       {
         name: data.name,
         price: data.price,
         quantity: data.quantity + 1,
+        inCart: true,
       },
     ]);
   };
@@ -105,18 +124,25 @@ const Store = () => {
   };
 
   const quantitySubtract = (data) => {
-    setCartItem((prevCartItems) => {
-      const updatedCartItems = prevCartItems.map((item) => {
-        if (item.name === data.name) {
-          return {
-            ...item,
-            quantity: item.quantity - 1,
-          };
-        }
-        return item;
+    if (data.quantity === 1) {
+      setCartItem((prevCartItems) => {
+        return prevCartItems.filter((item) => {
+          item.name !== data.name;
+        });
       });
-      return updatedCartItems;
-    });
+    } else if (data.quantity > 0) {
+      setCartItem((prevCartItems) => {
+        return prevCartItems.map((item) => {
+          if (item.name === data.name) {
+            return {
+              ...item,
+              quantity: item.quantity - 1,
+            };
+          }
+          return item;
+        });
+      });
+    }
   };
 
   return (
