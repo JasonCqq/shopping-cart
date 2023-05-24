@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0de1f94a.css",
-    "main.js": "/static/js/main.45d40cc5.js",
-    "static/media/pexels-marcus-murphy-1878821.jpg": "/static/media/pexels-marcus-murphy-1878821.6e78644d7231f0ef06a6.jpg",
-    "static/media/pier-lake-hallstatt-austria_181624-44201.avif": "/static/media/pier-lake-hallstatt-austria_181624-44201.fc8ab10982ef3f778503.avif",
-    "index.html": "/index.html",
-    "main.0de1f94a.css.map": "/static/css/main.0de1f94a.css.map",
-    "main.45d40cc5.js.map": "/static/js/main.45d40cc5.js.map"
+    "main.css": "/shopping-cart/static/css/main.53e046ec.css",
+    "main.js": "/shopping-cart/static/js/main.51e352f7.js",
+    "static/media/pexels-marcus-murphy-1878821.jpg": "/shopping-cart/static/media/pexels-marcus-murphy-1878821.6e78644d7231f0ef06a6.jpg",
+    "static/media/pier-lake-hallstatt-austria_181624-44201.avif": "/shopping-cart/static/media/pier-lake-hallstatt-austria_181624-44201.fc8ab10982ef3f778503.avif",
+    "index.html": "/shopping-cart/index.html",
+    "main.53e046ec.css.map": "/shopping-cart/static/css/main.53e046ec.css.map",
+    "main.51e352f7.js.map": "/shopping-cart/static/js/main.51e352f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.0de1f94a.css",
-    "static/js/main.45d40cc5.js"
+    "static/css/main.53e046ec.css",
+    "static/js/main.51e352f7.js"
   ]
 }
