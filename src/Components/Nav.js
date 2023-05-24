@@ -7,7 +7,7 @@ function Nav() {
     <div>
       <nav className="navBar">
         <a href="#" className="logo">
-          <span>The Cap Shop</span>
+          The Cap Shop
         </a>
         <input id="bmenub" type="checkbox" className="show"></input>
         <label htmlFor="bmenub" className="burger pseudo button">

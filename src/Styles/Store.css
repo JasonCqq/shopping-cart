@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -31,9 +36,8 @@ body::-webkit-scrollbar-thumb {
   width: 15vh;
 }
 
-.sidebar h1 {
+.sidebar h2 {
   text-align: center;
-  text-decoration: underline;
 }
 
 .total {
@@ -52,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 input {
   border-radius: 0px;
   border: 3px solid black;
-  width: 45vh;
+  width: 35vh;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 3vh;
@@ -93,4 +97,64 @@ button {
 .check-out:hover {
   background-color: black;
   color: white;
+}
+
+.store-items {
+  display: grid;
+  height: 100vh;
+  width: 85%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin-top: 5vh;
+  row-gap: 10vh;
+}
+
+.cap {
+  width: 20vh;
+  height: 20vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.nameAndPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addToCart {
+  background-color: black;
+  color: white;
+  width: 20vh;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-cap {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.cart-cap-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-cap-quantity {
+  display: flex;
+  width: 5vh;
+  align-items: center;
+}
+
+.cart-cap-quantity button {
+  color: black;
+  background: none;
+  height: 2vh;
 }
